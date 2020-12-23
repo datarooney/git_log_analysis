@@ -1,4 +1,4 @@
-###README
+### README
 
 This is a personal project to examine the git logs and understand the inner workings of git.
 

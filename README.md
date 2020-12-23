@@ -20,10 +20,10 @@ __notes:__
 ##### HOW TO
 
 1. Copy the file 'git_log_csv_export.sh' into a git repo.
-1. Execute the script from a terminal window
-1. Enter the file extension without the period e.g. 'py' for python, NOT '.py'
+1. Execute the script from a terminal window.
+1. Enter the file extension without the period e.g. 'py' for python, NOT '.py'.
 1. Wait for the export completed message, then repeat step 3 for other file extensions.
-1. The script creates a folder called meta outside of the git repo, if it doesn't exist already. In this folder the output filename contains the name of the repo suffixed by _git_log_output.csv
+1. The script creates a folder called meta outside of the git repo, if it doesn't exist already. In this folder the output filename contains the name of the repo suffixed by _git_log_output.csv.
 1. This script can take a long time to run, for transparency the file being run is printed in the terminal window.
 1. The script will print 'export complete' once it's finished.
 1. Remove the shell script from the repo to avoid it becoming part of your solution.

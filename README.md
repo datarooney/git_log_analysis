@@ -5,9 +5,9 @@ This is a personal project to examine the git logs and understand the inner work
 At present there is one file. This is a shell script to loop through all the files in a git repo and output the log for each file to a single csv file.
 
 __notes:__
-1. The script is intended to provide a file by file output at a point in time, not to examine the git log of the branch. In other words, this will only export data for files that exist at the point checked out. If files have been subsequently deleted, these will be ommitted from the results.
+1. The script is intended to provide a file by file output at a specific commit not to examine the entire git log of the branch. In other words, this will only export data for files that exist at the point checked out. If files have been deleted and do not currently exist in the repo, these will be ommitted from the results.
 
-1. If historic versions are to be examined, for example if large 'tidy-up' excercised have resulted in lots of deleted files, these can be examined by checking out a commit from prior to their deletion, then running the script.
+1. If historic versions are to be examined, for example if 'tidy-up' excercises have removed files, these can be examined by checking out a commit from prior to their deletion, then running the script.
 
 1. The script asks for a file extension. This is the extension WITHOUT the preceding period, e.g. for python 'py' will return results. '.py' will not.
 

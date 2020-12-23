@@ -11,12 +11,19 @@ __notes:__
 
 1. The script asks for a file extension. This is the extension WITHOUT the preceding period, e.g. for python 'py' will return results. '.py' will not.
 
-1. The script only takes one file extension at a time but appends to an existing file where it exists. Thus, running the script again for another extension will include these entries in the same output file. e.g. entering 'py' on the first run will return the git logs for all the python files. running the same script again immediately and entering 'sql' will append the logs for the sql files to the logs for the python files.
+1. The script only takes one file extension at a time but appends to an existing file where it exists. Thus, running the script again for another extension will include these entries in the same output file. E.g. Entering 'py' on the first run will return the git logs for all the python files. Running the same script again immediately and entering 'sql' will append the logs for the sql files to the logs for the python files. Repeat this process for all file types, or as necessary.
 
 1. The output file is a csv without headers. Sorry about that.
 
 1. The headers are: commit,author,author_date,committer,commit_date,inserted,deleted,file_path
 
+##### HOW TO
 
-
-
+1. Copy the file 'git_log_csv_export.sh' into a git repo.
+1. Execute the script from a terminal window
+1. enter the file extension without the period e.g. 'py' for python, NOT '.py'
+1. Wait for the export completed message, then repeat step 3 for other file extensions.
+1. The script creates a folder called meta outside of the git repo, if it doesn't exist already. In this folder the output filename contains the name of the repo suffixed by _git_log_output.csv
+1. This script can take a long time to run, for transparency the file being run is printed in the terminal window.
+1. The script will print 'export complete' once it's finished.
+1. Remove the shell script from the repo to avoid it becoming part of your solution.

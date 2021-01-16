@@ -15,5 +15,5 @@ sed -r 's/^.{3}/[/g' |
 sed -r 's/.$/]/g' |
 sed -r 's/("}]},)/\1\n/g'|
 sed -r 's/(numstat": )]/\1""}]/g' > \
-../meta/Test_${FOLDER_NAME}_git_log_output.json
+../meta/${FOLDER_NAME}_git_log_output.json
 echo "export complete"

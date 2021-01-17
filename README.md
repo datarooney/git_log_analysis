@@ -1,6 +1,6 @@
 ### README  - CSV output
 
-##N.B. this describes csv output. JSON output is currently in dev. Readme on JSON output to follow shortly - datarooney - 2021-01-17
+## N.B. this describes csv output. JSON output is currently in dev. Readme on JSON output to follow shortly - datarooney - 2021-01-17
 
 This is a personal project to examine the git logs and understand the inner workings of git.
 

@@ -20,6 +20,7 @@ sed -r 's/(: "[^\,"]+)\\([^,"]+)/\1\\\\\2/g' |
 sed -r 's/"\},,([^{"])/,\1/g' |
 sed -r 's/([a-zA-Z]+)\}\{/\1"\},\{/g' |
 sed -r 's/([a-zA-Z])\{/\1"\},{/g' |
-sed -r 's/"\},\{"/"\},\n\{"/g' > \
+sed -r 's/"\},\{"/"\},\n\{"/g' |
+sed -r 's/"numstat": ","//g' > \
 ../meta/${FOLDER_NAME}_git_log_output.json
 echo "export complete"
